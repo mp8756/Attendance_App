@@ -1,0 +1,31 @@
+<h1>EDIT STUDENTS RECORDS</h1>
+
+<form action="editrecord/{{students.student_id }}" method="post">
+{% csrf_token %}
+
+First_Name:<br>
+<input name="first" value="{{students.first_name}}">
+<br><br>
+
+Middle_Name:<br>
+<input name="middle" value="{{students.middle_name}}">
+<br><br>
+
+Last_Name:<br>
+<input name="last" value="{{students.last_name}}">
+<br><br>
+
+Date_of_Birth:<br>
+<input name="birthdate" value="{{students.date_of_birth}}">
+<br><br>
+
+Grade:<br>
+<input name="grade" value="{{students.grade}}">
+<br><br>
+
+Parent_Number:<br>
+<input name="number" value="{{students.parent_number}}">
+<br><br>
+
+<input type="submit" value="Submit">
+</form>
